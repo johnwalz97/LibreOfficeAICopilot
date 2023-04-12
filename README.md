@@ -1,35 +1,45 @@
-# LibreOffice Starter Extension
+# LibreOffice AI Copilot
 
-This repository contains some boilerplate code and config you need to get started to build your own LibreOffice Extension.
+This is a project I started to learn how to use the OpenAI APIs and specifically the gpt-3.5-turbo chat API. The goal is to add very basic AI
+functionality to LibreOffice Writer. I welcome any contributions to this project.
 
-You can use this project as a starting point to write your own extension for LibreOffice.
+LibreOffice AI Copilot is a plugin for LibreOffice that integrates OpenAI's GPT-3.5 Turbo model to provide AI-assisted writing features. This plugin enables users to generate context-aware text completions and suggestions directly within their LibreOffice documents, helping them improve their writing speed and quality.
 
-## Get started
+## Features
 
-1. Install [LibreOffice](http://www.libreoffice.org/download) & the [LibreOffice SDK](http://www.libreoffice.org/download) (5.0 or greater)
-2. Install [Eclipse](http://www.eclipse.org/) IDE for Java Developers & the [LOEclipse plugin](https://marketplace.eclipse.org/content/loeclipse)
-3. [Download](https://github.com/smehrbrodt/libreoffice-starter-extension/archive/master.zip) this starter project & unzip it
-4. Import the project in Eclipse (File->Import->Existing Projects into Workspace)
-5. Let Eclipse know the paths to LibreOffice & the SDK (Project->Properties->LibreOffice Properties)
-6. Setup Run Configuration
-    * Go to Run->Run Configurations
-    * Create a new run configuration of the type "LibreOffice Application"
-    * Select the project
-    * Run!
-    * *Hint: Show the error log to view the output of the run configuration (Window->Show View->Error Log)*
-7. The extension will be installed in LibreOffice (see Tools->Extension Manager)
-8. To launch the example dialog, click on the newly added toolbar/menu entry which have been added to Writer (named "Starter Project/Action One").
+- In-place prompt: Select a portion of text in your document and the AI will generate a context-aware completion based on the selected text.
+- Completion: Place the cursor at a specific location in your document and the AI will generate a completion based on the text before the cursor.
 
-## Development Hints
-* The entry point is in [StarterProjectImpl.java](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/source/org/libreoffice/example/comp/StarterProjectImpl.java).
-* Toolbar items and menu entries are defined in [Addons.xcu](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/registry/org/openoffice/Office/Addons.xcu).
-* Shortcuts are defined in [Accelerators.xcu](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/registry/org/openoffice/Office/Accelerators.xcu).
-* The position of the toolbar is defined in [WriterWindowState.xcu](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/registry/org/openoffice/Office/UI/WriterWindowState.xcu).
-* The dialog shown when clicking "Action One" is [ActionOneDialog.xdl](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/dialog/ActionOneDialog.xdl). The dialog itself contains information how to edit it.
-* The [DialogHelper](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/source/org/libreoffice/example/helper/DialogHelper.java) contains some helper methods to work with the dialog.
-* To debug the Java code, just stick a breakpoint anywhere in Eclipse and start your run configuration in debug mode.
-* If you add non-code files (or an external .jar) to your extension, you need to mention them in [package.properties](https://github.com/smehrbrodt/libreoffice-starter-extension/blob/master/package.properties), else they won't be included in the packaged extension.
-* Now go on customizing the extension to your needs. Some helpful links:
-  * [OpenOffice Wiki](https://wiki.openoffice.org/wiki/Extensions_development)
-  * [API Reference](http://api.libreoffice.org/docs/idl/ref/index.html)
-  * [Example extensions](http://api.libreoffice.org/examples/examples.html#Java_examples)
+## Installation
+
+1. Ensure you have LibreOffice installed on your system.
+2. Download the `libreoffice-ai-copilot.oxt` file from the repository.
+3. Open LibreOffice and navigate to the Extension Manager by clicking `Tools > Extension Manager`.
+4. Click `Add` and select the `libreoffice-ai-copilot.oxt` file to install the plugin.
+5. Restart LibreOffice after the installation is complete.
+
+## Usage
+
+- To use the in-place prompt feature, select a portion of text in your document, then click `AI Copilot > In-place Prompt` or use the assigned keyboard shortcut (CMD+Shift+X on Mac, CTRL+Shift+X on Windows).
+- To use the completion feature, place the cursor at the desired location in your document, then click `AI Copilot > Completion` or use the assigned keyboard shortcut (CMD+Shift+D on Mac, CTRL+Shift+D on Windows).
+
+## API Key Configuration
+
+To use this plugin, you need to have an API key from OpenAI. To set up the API key:
+
+1. Open the `libre_copilot/copilot.py` file in a text editor.
+2. Locate the following line:
+
+```python
+openai.api_key = "YOUR_API_KEY_HERE"
+```
+
+3. Replace `YOUR_API_KEY_HERE` with your OpenAI API key and save the changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please submit pull requests for any improvements or bug fixes. If you have any questions or feature requests, feel free to open an issue.
