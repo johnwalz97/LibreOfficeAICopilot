@@ -1,0 +1,1 @@
+LibreOffice AI Copilot adds the power of GPT-4 to your documents. It's a free add-on for LibreOffice that uses the GPT-4 language model to help you write documents.

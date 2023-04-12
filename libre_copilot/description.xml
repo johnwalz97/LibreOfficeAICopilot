@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <identifier value="org.libreoffice.jwalz.AICopilot"/>
+    <version value="1.0" />
+    <display-name>
+        <name lang="en">LibreOffice AI Copilot</name>
+    </display-name>
+    <icon>
+        <default xlink:href="description/extensionicon_42.png" />
+    </icon>
+    <publisher>
+        <name lang="en">John Walz</name>
+    </publisher>
+    <extension-description>
+        <src xlink:href="description/description_en.txt"/>
+    </extension-description>
+</description>

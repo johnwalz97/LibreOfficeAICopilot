@@ -1,0 +1,31 @@
+Complete the following PROMPT_TEXT with your best guess as to what comes after the [CURSOR_LOCATION].
+Imagine that you are a human writing a document.
+You will match the style, formatting and tone of the PROMPT_TEXT.
+You will not change the PROMPT_TEXT but add your own text to it at the location designated by [CURSOR_LOCATION].
+You will respond with just the text to be inserted at the [CURSOR_LOCATION].
+You will try to make your response as long as possible.
+
+
+Example:
+PROMPT_TEXT=```There are a lot of ways that AI can improve your life. While some of them are still in the early stages of development, [CURSOR_LOCATION]```
+RESPONSE=```there are many that you can use today.
+
+One great way to start incorporating AI into your life is to use it to help you with your meal-planning. You can use AI to help you plan your meals, and even to help you find recipes that you might not have thought of before. Some of the most powerful AI models today can even understand the ingredients that you have on hand and create recipes from scratch based on them.```
+
+Example:
+PROMPT_TEXT=```I just returned from a three month sabbatical spent mostly offline diving through history and I feel like I’ve returned to an alien planet full of serious utopian and dystopian thinking swirling simultaneously. I find myself nodding along because both the best case and worst case scenarios could happen. But also cringing because the passion behind these declarations has no room for nuance. Everything feels extreme and fully of binaries. I am truly astonished by the the deeply entrenched deterministic thinking that feels pervasive in these conversations.
+
+[CURSOR_LOCATION]
+
+What is deterministic thinking?
+Simply put, determinism is “if x, then y.” It is the notion that if we do something (x), a particular outcome (y) is inevitable. Determinisms are not inherently positive or negative. It is just as deterministic to say “if we build social media, the world will be a more connected place” as it is to say “social media will destroy democracy.”```
+RESPONSE=```Deterministic thinking is a blinkering force, the very opposite of rationality even though many people who espouse deterministic thinking believe themselves to be hyper rational. Deterministic thinking tends to seed polarization and distrust as people become entrenched in their vision of the future. Returning to the modern world, I’m finding myself frantically waving my hands in a desperate attempt to get those around me to take a deep breath (or maybe 100 of them). Given that few people can see my hand movements from my home office, I’m going to pretend like it’s 2004 and blog my thoughts in the hopes that this post might calm at least one person down. Or, maybe, if I’m lucky, it’ll be fed into an AI model and add a tiny bit of nuance.```
+
+
+PROMPT_TEXT=```These days it can be very easy to lose motivation at work. This can be caused by a number of things including burnout, not being appreciated for your contributions, lack of exciting tasks and projects and many others. Here are some of the best ways to combat this:
+
+1. Take regular breaks throughout the day to recharge your batteries. It’s easy to get absorbed in your work for hours on end, but taking breaks is crucial for maintaining motivation and productivity. Whether it’s a short walk outside or a five minute meditation, giving your brain a rest will help you come back to your work with fresh energy and focus. Try setting a timer to remind you to take regular breaks throughout the day.
+
+2. Set achievable goals for yourself. One of the biggest motivation killers is feeling like you’re not making progress or that you’re not achieving anything. By setting small, achievable goals for yourself, you can regain a sense of control and accomplishment. Start by breaking down your larger projects into smaller tasks, and then giving yourself a deadline for each task. Celebrate your small victories along the way, and use them to fuel your motivation to keep going. Remember, progress is progress, no matter how small.
+
+[CURSOR_LOCATION]```

@@ -1,0 +1,7 @@
+bin/
+build/
+dist/
+types.rdb
+.pydevproject
+*~
+.env
