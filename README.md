@@ -1,4 +1,4 @@
-# LibreOffice AI Copilot
+# WIP: LibreOffice AI Copilot
 
 This is a project I started to learn how to use the OpenAI APIs and specifically the gpt-3.5-turbo chat API. The goal is to add very basic AI
 functionality to LibreOffice Writer. I welcome any contributions to this project.
